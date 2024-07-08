@@ -20,13 +20,13 @@ var myHeading = document.querySelector("h1");
 function setUserName() {
     var myName = prompt("Как тебя зовут?");
     localStorage.setItem("name", myName);
-    myHeading.textContent = "Ну привет, " + myName + ', как тебе моя первая страница';
+    myHeading.textContent = "Привет, " + myName + ', как тебе моя первая страница';
   }
   if (!localStorage.getItem("name")) {
     setUserName();
   } else {
     var storedName = localStorage.getItem("name");
-    myHeading.textContent = "Ну привет, " + storedName + ', как тебе моя первая страница';
+    myHeading.textContent = "Привет, " + storedName + ', как тебе моя первая страница';
   }
   
   myButton.onclick = function () {
