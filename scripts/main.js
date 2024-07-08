@@ -18,7 +18,7 @@ myImage2.onclick = function () { audio.play() };
 var myButton = document.querySelector("button");
 var myHeading = document.querySelector("h1");
 function setUserName() {
-    var myName = prompt("Как тебя зовут?");
+    var myName = prompt("Привет, как тебя зовут?");
     localStorage.setItem("name", myName);
     myHeading.textContent = "Привет, " + myName + ', как тебе моя первая страница';
   }
