@@ -18,15 +18,15 @@ myImage2.onclick = function () { audio.play() };
 var myButton = document.querySelector("button");
 var myHeading = document.querySelector("h1");
 function setUserName() {
-    var myName = prompt("Как тебя зовут сосунок?");
+    var myName = prompt("Как тебя зовут?");
     localStorage.setItem("name", myName);
-    myHeading.textContent = "Ну привет, " + myName + ', сейчас ты будешь сосать';
+    myHeading.textContent = "Ну привет, " + myName + ', как тебе моя первая страница';
   }
   if (!localStorage.getItem("name")) {
     setUserName();
   } else {
     var storedName = localStorage.getItem("name");
-    myHeading.textContent = "Ну привет, " + storedName + ', сейчас ты будешь сосать';
+    myHeading.textContent = "Ну привет, " + storedName + ', как тебе моя первая страница';
   }
   
   myButton.onclick = function () {
